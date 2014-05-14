@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Noware",
+	"version": "1.0",
+	"description": "Replaces Yesware click tracking links with direct links instead.",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["jquery-2.1.1.min.js", "content_script.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	]
+}
